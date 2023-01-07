@@ -144,6 +144,7 @@
     }
 
     .pop-up {
+        outline: none !important;
         margin: 0px 20px 0px 20px !important;
         display: flex !important;
     justify-content: space-between !important; 
@@ -154,12 +155,12 @@
     }
 
     .pop-up-h, .pop-up-v, .pop-up-x {
+        outline: none !important;
         border-radius: 60px !important;
         width: 100% !important;
         height: auto !important;
         visibility: visible !important;
         box-shadow: 2px 2px 0px 0px #fcb1ea25;
-    outline: none;
     background-color: #fcf9ff;
     min-height: auto !important;
     display: block !important;
@@ -172,7 +173,7 @@
     font-size: 28px !important;
     border: 1px solid #fcb1ea11;
     padding: 24px 48px 24px 48px;
-    border-radius: 60px;
+    border-radius: 60px !important;
     width: auto !important;
     min-height: auto;
     margin: initial;
@@ -182,7 +183,7 @@
 }
 
 .pop-up-v {
-    outline: none;
+    outline: none!important;
     min-height: auto;
     display: block !important;
     margin-left: 0px !important;
@@ -192,17 +193,17 @@
 }
 
 .pop-up-x {
-    outline: none;
+    outline: none !important;
     margin-bottom: 0px !important;
 }
 
 .pop-up-h {
-    outline: none;
+    outline: none !important;
     margin-right: 0px !important; 
     margin-top: 0px !important; }
 
 .footer {
-    position: fixed !important;
+    position: static !important;
     margin: 0px !important;
     font-size: 18px !important;
     height: 44px !important;
