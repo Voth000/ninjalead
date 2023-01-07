@@ -159,9 +159,7 @@
         height: auto !important;
         visibility: visible !important;
         box-shadow: 2px 2px 0px 0px #fcb1ea25;
-        outline-style: solid;
-    outline-width: 1px;
-    outline-color: none;
+    outline: none;
     background-color: #fcf9ff;
     min-height: auto !important;
     display: block !important;
@@ -184,28 +182,27 @@
 }
 
 .pop-up-v {
+    outline: none;
     min-height: auto;
     display: block !important;
     margin-left: 0px !important;
     align-self: none !important;
     margin-top: 0px !important;
     /* visibility: hidden; */
-    outline-color: #FEFDE5;
 }
 
 .pop-up-x {
+    outline: none;
     margin-bottom: 0px !important;
-    outline-color: #E5F8FE;
 }
 
 .pop-up-h {
+    outline: none;
     margin-right: 0px !important; 
-    margin-top: 0px !important; 
-    outline-color: #FCF0F6;
-}
+    margin-top: 0px !important; }
 
 .footer {
-    position: sticky !important;
+    position: fixed !important;
     margin: 0px !important;
     font-size: 18px !important;
     height: 44px !important;
