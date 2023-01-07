@@ -1,5 +1,5 @@
 import * as THREE from 'https://unpkg.com/three@0.139.2/build/three.module.js';
-import * as YUKA from './node_modules/yuka/build/yuka.module.js'
+import * as YUKA from './yuka.module.js'
 import {GLTFLoader} from "./GLTFLoader.js"
 
 const hdrTextureURL = new URL('./HDRI_Softer.hdr', import.meta.url)
