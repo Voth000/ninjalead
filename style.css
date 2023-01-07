@@ -12,7 +12,7 @@
 
     body {
         overflow-y: scroll !important;
-        position: unset !important;
+        position: relative !important;
         height: 100vh !important;
         margin-top: 0px !important;
         margin-bottom: 0px !important;
@@ -83,6 +83,7 @@
         padding: 0px 0px 0px 8px;
         box-shadow: 2px 2px 0px 0px #fcb1ea25;
         width: 100%;
+
     }
 
     .btn-name {
@@ -204,7 +205,7 @@
     margin-top: 0px !important; }
 
 .footer {
-    position: revert !important;
+    position: fixed !important;
     margin: 0px !important;
     font-size: 18px !important;
     height: 44px !important;
