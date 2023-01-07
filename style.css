@@ -175,6 +175,7 @@
     padding: 24px 48px 24px 48px;
     border-radius: 60px !important;
     width: auto !important;
+    outline: none !important;
     min-height: auto;
     margin: initial;
     display: grid;
@@ -203,7 +204,7 @@
     margin-top: 0px !important; }
 
 .footer {
-    position: static !important;
+    position: absolute !important;
     margin: 0px !important;
     font-size: 18px !important;
     height: 44px !important;
