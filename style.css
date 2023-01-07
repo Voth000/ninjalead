@@ -204,7 +204,7 @@
     margin-top: 0px !important; }
 
 .footer {
-    position: static !important;
+    position: revert !important;
     margin: 0px !important;
     font-size: 18px !important;
     height: 44px !important;
@@ -231,6 +231,7 @@
 }
 
 #pi {
+    max-width: 90%;
     font-size: 16px !important;
 }
 
