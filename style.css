@@ -11,9 +11,9 @@
     }
 
     body {
-        overflow-x: hidden;
+        overflow-x: hidden !important;
         overflow-y: scroll !important;
-        position: relative !important;
+        position: unset !important;
         height: 100vh !important;
         margin-top: 0px !important;
         margin-bottom: 0px !important;
