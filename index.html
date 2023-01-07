@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>LonXonNhuNinjaLead</title>
+    <style>
+		#top, #bottom, #left, #right {
+			background: #FB81E4;
+			}
+			#left, #right {
+				position: fixed;
+				top: 0; bottom: 0;
+				width: 1px;
+				}
+				#left { left: 0; }
+				#right { right: 0; }
+				
+			#top, #bottom {
+				position: fixed;
+				left: 0; right: 0;
+				height: 1px;
+				}
+				#top { top: 0; }
+				#bottom { bottom: 0; }
+				
+		@media 
+		
+		/* Fairly small screens including iphones */
+		only screen and (max-width: 500px),
+		
+		/* iPads */
+		only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+		
+		{
+			#top, #bottom, #left, #right { display: none; }
+		}
+	</style>
+</head>
+<body>
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
+
+<header>
+    <nav>
+        <div class="logo">
+            <a id="logoimg" href="#logo"><img src="./image/logo.png" alt="logo" style="max-width:60px"></a>
+        </div>
+        <div class="btn-dropdown" data-dropdown>
+            <div class="btn-icon" tabindex="0" data-dropdown-button>
+                <div class ="btn-name">En</div>
+                <div class="icon-bg">
+                    <div class="icon"></div>
+                </div>
+            </div>
+            <div class="btn-options">
+                    <a id="nn" href="#eng" language="english" id="options" class="active" data-reloaded>En</a>
+                    <a id="nn" href="#vi"  language="vietnamese" id="options" data-reloaded>Vi</a>
+            </div>
+        </div>
+    </nav>
+</header>  
+
+    <div class="cotden">
+     <div class="image-button">
+        <div id="vang" class="vang" onclick="window.open('newurl.html','mywindow');" style="cursor: pointer;">
+            <a id="wikipage" href="#nn"></a>
+        </div>
+        <div id="hong" class="hong" onclick="window.open('newurl.html','mywindow');" style="cursor: pointer;">
+            <a id="archivepage" href="#"></a>
+        </div>
+        <div id="xanh" class="xanh" onclick="window.open('newurl.html','mywindow');" style="cursor: pointer;">
+            <a id="contact page" href="#"></a>
+        </div>
+     </div>
+     <img id="paral" class="img-bg" data-value="-2" src="./image/bgbutton1.png" alt="bgden" >
+    </div> 
+    <div class="pop-up">
+    <div id="vangpop" class="pop-up-v">
+    <h3 class ="title"> What is this? </h3>
+    <p class= "content"> The wikipedia of project "Messy as Ninja Lead"  
+        <a id="mobilelink" class="mobilepage" href="#nn"> Enter this project wiki -> </a>
+    </p>
+     </div>
+    <div id="hongpop" class="pop-up-x">
+    <h3 class ="title"> Archive</h3>
+    <p class= "content"> An Interative exhibition
+        <a id="mobilelink" class="mobilepage" href="#"> See the exhibition ->  </a>
+     </p>
+    </div>
+    <div id="xanhpop" class="pop-up-h">
+    <h3 class ="title"> Contact </h3>
+    <p class= "content"> In case you want to connect >.3
+        <a id="mobilelink" class="mobilepage" href="#"> Let keep in touch ->   </a>
+    </p>
+    </div>
+</div>
+
+
+
+<footer class="footer">
+            <div id="pi">Footer</div>
+</footer>
+
+<canvas class="webgl"></canvas>
+
+<div id="center">
+    <div id ="animate"></div>
+</div>
+
+<script src="index.js" type="module"></script>
+<script src="./js/main.js" defer></script>
+
+
+</body>
+</html>
