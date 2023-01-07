@@ -148,12 +148,13 @@
         display: flex !important;
     justify-content: space-between !important; 
     flex-direction: column !important;
-
+    border-radius: 60px !important;
         visibility: visible !important;
         grid-gap: 12px !important;
     }
 
     .pop-up-h, .pop-up-v, .pop-up-x {
+        border-radius: 60px !important;
         width: 100% !important;
         height: auto !important;
         visibility: visible !important;
@@ -163,7 +164,6 @@
     outline-color: none;
     background-color: #fcf9ff;
     min-height: auto !important;
-    border-radius: 60px;
     display: block !important;
     /* min-height: 100%; */
     box-shadow: 2px 2px 0px 0px #fcb1ea25;
