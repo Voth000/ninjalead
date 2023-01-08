@@ -149,7 +149,7 @@
     justify-content: unset !important; 
     flex-direction: column !important;
         outline: none !important;
-        margin: 80px 20px 40px 20px !important;
+        margin: 90px 20px 40px 20px !important;
     border-radius: 60px !important;
         visibility: visible !important;
         grid-gap: 24px !important;
@@ -238,8 +238,9 @@
 }
 
 #pi {
-    font-size: 16px !important;
+    font-size: 20px !important;
     max-width: 90%;
+    line-height: 22px !important;
 }
 
 }
