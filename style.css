@@ -149,7 +149,7 @@
     justify-content: space-between !important; 
     flex-direction: column !important;
         outline: none !important;
-        margin: 90px 20px 0px 20px !important;
+        margin: 90px 20px 20px 20px !important;
     border-radius: 60px !important;
         visibility: visible !important;
         grid-gap: 24px !important;
