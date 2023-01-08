@@ -11,7 +11,6 @@
     }
 
     body {
-        overflow-x: hidden !important;
         overflow-y: scroll !important;
         position: unset !important;
         height: 100vh !important;
@@ -146,8 +145,6 @@
     }
 
     .pop-up {
-        overflow-x: none;
-        overflow-y: auto !important;
         outline: none !important;
         margin: 0px 20px 0px 20px !important;
         display: flex !important;
