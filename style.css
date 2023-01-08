@@ -21,7 +21,6 @@
         min-width: 100% !important;
         display: grid !important;
         grid-template-rows: auto 1fr auto !important;
-        grid-gap: 20px !important;
         margin: 0px !important;
 
     }
@@ -146,12 +145,14 @@
     }
 
     .pop-up {
-        overflow-y: scroll !important;
+        display: flex !important;
+    justify-content: space-between !important; 
+    flex-direction: column !important;
         outline: none !important;
-        margin: 0px 20px 0px 20px !important;
+        margin: 80px 20px 40px 20px !important;
     border-radius: 60px !important;
         visibility: visible !important;
-        grid-gap: 12px !important;
+        grid-gap: 24px !important;
     }
 
     .pop-up-h, .pop-up-v, .pop-up-x {
@@ -204,9 +205,15 @@
     margin-top: 0px !important; }
 
 .footer {
-    position: unset !important;
+    top: 80px !important;
+    bottom: unset !important;
+    z-index: -1 !important;
+    position: absolute !important;
     margin: 0px !important;
     font-size: 18px !important;
+    height: 44px !important;
+    background-color: unset !important;
+    border: unset !important;
     height: 44px !important;
 
 }
@@ -232,6 +239,7 @@
 
 #pi {
     font-size: 16px !important;
+    max-width: 90%;
 }
 
 }
