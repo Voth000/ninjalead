@@ -22,7 +22,11 @@ var poem = [
   "#00BCF2", 
   "#FFF233", 
   "#4CF6C0",
-  "#FF7E5C"
+  "#FF7E5C",
+  "#3EF24E",
+  "#1792F2",
+  "#BDA8FF"
+
 ];
 
   var currentColor = 0
