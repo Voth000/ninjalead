@@ -21,7 +21,7 @@
         min-width: 100% !important;
         display: grid !important;
         grid-template-rows: auto 1fr auto !important;
-        grid-gap: 40px !important;
+        grid-gap: 20px !important;
         margin: 0px !important;
 
     }
@@ -146,11 +146,9 @@
     }
 
     .pop-up {
+        overflow-y: scroll !important;
         outline: none !important;
         margin: 0px 20px 0px 20px !important;
-        display: flex !important;
-    justify-content: space-between !important; 
-    flex-direction: column !important;
     border-radius: 60px !important;
         visibility: visible !important;
         grid-gap: 12px !important;
@@ -206,7 +204,7 @@
     margin-top: 0px !important; }
 
 .footer {
-    position: absolute !important;
+    position: unset !important;
     margin: 0px !important;
     font-size: 18px !important;
     height: 44px !important;
