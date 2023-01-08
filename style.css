@@ -146,7 +146,8 @@
     }
 
     .pop-up {
-        overflow-y: scroll !important;
+        overflow-x: none;
+        overflow-y: auto !important;
         outline: none !important;
         margin: 0px 20px 0px 20px !important;
         display: flex !important;
