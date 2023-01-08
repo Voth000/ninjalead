@@ -206,11 +206,9 @@
     margin-top: 0px !important; }
 
 .footer {
-<<<<<<< HEAD
-    position: fixed !important;
+
 =======
     position: static !important;
->>>>>>> parent of dcd2d60 (Update style.css)
     margin: 0px !important;
     font-size: 18px !important;
     height: 44px !important;
