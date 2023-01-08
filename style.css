@@ -11,6 +11,7 @@
     }
 
     body {
+        overflow-x: none !important;
         overflow-y: scroll !important;
         position: unset !important;
         height: 100vh !important;
