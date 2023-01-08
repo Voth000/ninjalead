@@ -153,7 +153,7 @@
     border-radius: 60px !important;
         visibility: visible !important;
         grid-gap: 24px !important;
-        height: auto !important;
+        height: 100% !important;
     }
 
     .pop-up-h, .pop-up-v, .pop-up-x {
