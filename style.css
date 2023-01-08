@@ -146,7 +146,7 @@
 
     .pop-up {
         display: flex !important;
-    justify-content: space-between !important; 
+    justify-content: unset !important; 
     flex-direction: column !important;
         outline: none !important;
         margin: 80px 20px 40px 20px !important;
