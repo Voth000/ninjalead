@@ -207,7 +207,7 @@
     margin-top: 0px !important; }
 
 .footer {
-    position: static !important;
+    position: unset !important;
     margin: 0px !important;
     font-size: 18px !important;
     height: 44px !important;
