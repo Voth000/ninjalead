@@ -152,7 +152,7 @@ el2.addEventListener('mouseout', function handleMouseOut() {
 
 document.addEventListener("mouseover",parallax);
 function parallax(e){
-    document.querySelectorAll("#paral").forEach(function(move){
+    document.querySelectorAll(".img-bg").forEach(function(move){
 
         var moving_value = move.getAttribute("data-value");
         var x = (e.clientX * moving_value) / 200 ;
@@ -163,6 +163,7 @@ function parallax(e){
 }
 
 //// disable hover for touch screen
+
 
 
 
