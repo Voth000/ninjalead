@@ -4,6 +4,9 @@ import {GLTFLoader} from "./GLTFLoader.js"
 
 import { RGBELoader } from 'https://cdn.skypack.dev/three@0.130.1/examples/jsm/loaders/RGBELoader.js'
 
+if (detectedOS == "mac" ) {
+    contextPowerPreference = "high-performance";
+}
 
 
 const canvas = document.querySelector('.webgl')
@@ -124,7 +127,7 @@ renderComponent.matrix.copy(entity.worldMatrix)
 
 const entityManager = new YUKA.EntityManager()
 entityManager.add(vehicle)
-vehicle.scale.set(2, 2, 2)
+vehicle.scale.set(1, 1.8, 1.8)
 
 ///GLTF vehicle
 
