@@ -526,7 +526,7 @@ box-shadow: 2px 2px 0px 0px #fcb1ea25;
 
 .pop-up-x {
     border-radius: 60px;
-    background-color: #26fada !important;
+
     visibility: hidden;
 
     align-self: end;
@@ -556,8 +556,8 @@ box-shadow: 2px 2px 0px 0px #fcb1ea25;
 
 .pop-up-h .content {
 
-    background-color: #f74ecf;
-    color: #c9ffd5;
+    background-color: #FCF0F6;
+    color: #8ACC98;
     border: solid 1px #FCF0F6;
     border-radius: 60px;
 }
@@ -567,7 +567,7 @@ box-shadow: 2px 2px 0px 0px #fcb1ea25;
 }
 
 .pop-up-v .content {
-    background-color: #faf326;
+    background-color: #FEFDE5;
     color: #E565A6;
 }
 .pop-up-v .title {
@@ -576,11 +576,11 @@ box-shadow: 2px 2px 0px 0px #fcb1ea25;
 }
 
 .pop-up-x .content {
-    background-color: #feffff;
-    color: #f53f94;
+    background-color: #ebfaf4;
+    color: #28d0ff;
 }
 .pop-up-x .title {
-    color: #f8ff69;
+    color: #E565A6;
     
 }
 
