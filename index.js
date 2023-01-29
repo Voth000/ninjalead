@@ -2,13 +2,26 @@ import * as THREE from 'https://unpkg.com/three@0.139.2/build/three.module.js';
 import * as YUKA from './yuka.module.js'
 import {GLTFLoader} from "./GLTFLoader.js"
 
-const hdrTextureURL = new URL('./HDRI_Softer.hdr', import.meta.url)
+import { RGBELoader } from 'https://cdn.skypack.dev/three@0.130.1/examples/jsm/loaders/RGBELoader.js'
+
+
 
 const canvas = document.querySelector('.webgl')
 const scene = new THREE.Scene()
 
 
 ///GLTFLoader normal
+
+// Scene, Camera
+const hdrUrl = 'https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/abandoned_greenhouse_1k.hdr'
+new RGBELoader().load(hdrUrl, texture => {
+  const gen = new THREE.PMREMGenerator(renderer)
+  const envMap = gen.fromEquirectangular(texture).texture
+  scene.environment = envMap
+
+  texture.dispose()
+  gen.dispose()
+})
 
 ///const loader = new GLTFLoader()
 //loader.load('/3.glb', function(glb){
@@ -23,13 +36,19 @@ const scene = new THREE.Scene()
 //})
 
 //light
-const light = new THREE.DirectionalLight(0xffffff, 4)
-light.position.set(2,20,5)
+const light = new THREE.AmbientLight(0xffffff, 0.6)
+light.position.set(2,10,5)
 scene.add(light)
 
-const al = new THREE.DirectionalLight(0xffffff, 4)
-light.position.set(-2,-20,-5)
+const al = new THREE.AmbientLight(0xffffff, 0.25)
+light.position.set(20,-10,-5)
 scene.add( al )
+
+const wl = new THREE.DirectionalLight(0xffffff, 1)
+light.position.set(8,3,8)
+scene.add( wl )
+
+
 
 //cube
 
@@ -49,7 +68,7 @@ const sizes = {
 
 //camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width/sizes.height, 0.1, 1000)
-camera.position.set(8,30,0)
+camera.position.set(8,20,0)
 camera.lookAt(scene.position)
 scene.add(camera)
 
@@ -61,7 +80,7 @@ const renderer = new THREE.WebGL1Renderer({
 })
 
 renderer.setSize(window.innerWidth,window.innerHeight)
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 4))
 renderer.shadowMap.enabled = true
 renderer.render(scene,camera)
 renderer.setClearColor( 0xffffff, 0.25)
@@ -111,7 +130,7 @@ vehicle.scale.set(2, 2, 2)
 
 const loader = new GLTFLoader()
 const group = new THREE.Group()
-loader.load('./3.glb', function(glb){
+loader.load('./1.glb', function(glb){
     const model = glb.scene;
     group.add(model)
     scene.add(group);
@@ -136,10 +155,10 @@ entityManager.add(target);
 
 //seek behaviour to sphere by replace arrive = seek and otherwise
 
-const arriveBehavior = new YUKA.ArriveBehavior(target.position, 3, 0.5)
+const arriveBehavior = new YUKA.ArriveBehavior(target.position, 4, 0.8)
 vehicle.steering.add(arriveBehavior)
-vehicle.maxSpeed = 6
-vehicle.position.set(-10, 8, -20)
+vehicle.maxSpeed = 8
+vehicle.position.set(-10, 10, -20)
 
 ///Mouse as target position
 
@@ -152,7 +171,7 @@ window.addEventListener('mousemove', function(e) {
 
 ///Plane for mose position
 
-const planeGeo = new THREE.PlaneGeometry(300, 300);
+const planeGeo = new THREE.PlaneGeometry(1200, 1200);
 const planeMat = new THREE.MeshBasicMaterial({visible: false});
 const planeMesh = new THREE.Mesh(planeGeo, planeMat);
 planeMesh.rotation.x = -0.5 * Math.PI;
