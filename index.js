@@ -119,7 +119,7 @@ vehicle.scale.set(1.8, 1.8, 1.8)
 
 const loader = new GLTFLoader()
 const group = new THREE.Group()
-loader.load('./2.glb', function(glb){
+loader.load('./1.glb', function(glb){
     const model = glb.scene;
     group.add(model)
     scene.add(group);
