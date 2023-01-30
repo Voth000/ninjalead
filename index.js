@@ -2,7 +2,7 @@ import * as THREE from 'https://unpkg.com/three@0.139.2/build/three.module.js';
 import * as YUKA from './yuka.module.js'
 import {GLTFLoader} from "./GLTFLoader.js"
 
-import { RGBELoader } from 'https://cdn.skypack.dev/three@0.130.1/examples/jsm/loaders/RGBELoader.js'
+
 
 
 
@@ -11,17 +11,6 @@ const scene = new THREE.Scene()
 
 
 ///GLTFLoader normal
-
-// Scene, Camera
-const hdrUrl = 'https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/abandoned_greenhouse_1k.hdr'
-new RGBELoader().load(hdrUrl, texture => {
-  const gen = new THREE.PMREMGenerator(renderer)
-  const envMap = gen.fromEquirectangular(texture).texture
-  scene.environment = envMap
-
-  texture.dispose()
-  gen.dispose()
-})
 
 ///const loader = new GLTFLoader()
 //loader.load('/3.glb', function(glb){
