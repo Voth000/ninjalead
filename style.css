@@ -272,6 +272,7 @@ body{
 }
 
 #center {
+    background-color: #7ae2ff;
     display: grid;
     grid-column: span 2;
     min-height: 100%;
@@ -285,7 +286,7 @@ body{
   place-items: center;
 }
 
-#animate {
+.animate {
     place-items: center;
     background:
     linear-gradient(to bottom right,#fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #B4F9DC 25.23%,#ffd1ec 34.56%, #FDE0F1 40.76%, #4cf6d4 50%) bottom right,
