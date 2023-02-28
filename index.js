@@ -113,7 +113,7 @@ renderComponent.matrix.copy(entity.worldMatrix)
 
 const entityManager = new YUKA.EntityManager()
 entityManager.add(vehicle)
-vehicle.scale.set(1.8, 1.8, 1.8)
+vehicle.scale.set(1.4, 1.4, 1.4)
 
 ///GLTF vehicle
 
