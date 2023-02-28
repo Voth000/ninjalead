@@ -415,6 +415,7 @@ text-decoration: none;
 
 #logoimg:hover {
     background-color: #fee5f1;
+    border-radius: 12px;
 }
 
 #nn:hover { 
@@ -641,14 +642,14 @@ width: 100%;
 }
 
 #case {
-    filter: drop-shadow(2px 2px 4px rgba(238, 248, 89, 0.339));
+    filter: drop-shadow(2px 2px 4px rgba(238, 248, 89, 0.339)) saturate(1.4);
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 102%;
-    width: 102%;
+    height: 105%;
+    width: 105%;
     min-width: 100%;
 
     flex-direction: row;
