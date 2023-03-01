@@ -290,10 +290,10 @@ body{
 .animate {
     place-items: center;
     background:
-    linear-gradient(to bottom right,#fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #B4F9DC 25.23%,#ffd1ec 34.56%, #FDE0F1 40.76%, #4cf6d4 50%) bottom right,
-    linear-gradient(to bottom left, #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #B4F9DC 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #4cf6d4 50%) bottom left,
-    linear-gradient(to top left,    #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #B4F9DC 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #4cf6d4 50%) top left,
-    linear-gradient(to top right,   #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #B4F9DC 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #4cf6d4  50%) top right;
+    linear-gradient(to bottom right,#fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #B4F9DC 25.23%,#ffd1ec 34.56%, #FDE0F1 40.76%, #f0ef8a 50%) bottom right,
+    linear-gradient(to bottom left, #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #B4F9DC 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #f0ef8a 50%) bottom left,
+    linear-gradient(to top left,    #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #B4F9DC 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #f0ef8a 50%) top left,
+    linear-gradient(to top right,   #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #B4F9DC 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #f0ef8a  50%) top right;
    background-size:50% 50%;
  border-radius: 20px;
    background-repeat:no-repeat;
