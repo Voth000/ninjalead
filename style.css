@@ -4,6 +4,13 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 
 
+@media (max-width: 500px) {
+    .mobilepage {
+        margin-left: 30% !important;
+        
+    }
+}
+
 @media (max-width: 900px) {
 
     * {
@@ -47,7 +54,9 @@
     }
 
     .title {
-        font-size: 20px !important;
+        margin-left: 3em;
+        text-align: left !important;
+    
     }
 
     .logo {
@@ -152,7 +161,7 @@
         margin: 90px 20px 20px 20px !important;
     border-radius: 60px !important;
         visibility: visible !important;
-        grid-gap: 24px !important;
+        grid-gap: 3em !important;
         height: unset !important;
     }
 
@@ -172,16 +181,19 @@
 }
 
 .content {
-    font-size: 24px !important;
-    border: 1px solid #fcb1ea11;
-    padding: 24px 48px 24px 48px;
+    height: 90% !important;
+    
+    flex-direction: column;
+    font-size: 20px !important;
+    justify-content: space-between !important;
+    padding: 24px 24px 24px 2em !important;
     border-radius: 60px !important;
     width: auto !important;
     outline: none !important;
     min-height: auto;
     margin: initial;
-    display: grid;
-    grid-gap: 24px;
+    display: flex;
+    grid-gap: 1em;
     min-height: auto;
 }
 
@@ -221,9 +233,70 @@
 }
 
 .mobilepage {
+    color: #fcf9ff;
+    margin-bottom: 1em ;
+    margin-left: 60%;
+    border-radius: 60px;
+    padding: 24px 32px;
+
     font-size: 18px !important;
     text-align: right;
-    display: revert !important;
+    display: flex !important;
+    text-decoration: none;
+    background-color: #E565A6;
+    justify-content: center;
+}
+
+.content {
+    background-color: #ffffff !important;
+    color: #ebfaf4;
+}
+
+.pop-up-v {
+    background-color: #fffac7 !important;
+   
+}
+.pop-up-v .content {
+    color: #fb81e4 !important;
+   
+}
+.pop-up-v .title {
+    color: #03e756 !important; 
+}
+.pop-up-v .mobilepage {
+    background-color: #fb81e4;
+    color: #b0f9c0;
+}
+
+.pop-up-h .mobilepage {
+    background-color: #03e756;
+    color: #fde0f1;
+}
+.pop-up-h {
+    background-color: #cef4ff !important;
+   
+}
+.pop-up-h .content {
+    color: #03e756 !important;
+   
+}
+.pop-up-h .title {
+    color: #fb81e4 !important; 
+}
+
+.pop-up-x .mobilepage {
+    background-color: #28d0ff;
+    color: #fffac7;
+}
+.pop-up-x {
+    background-color: #ffd1ec !important;
+}
+.pop-up-x .content {
+    color: #28d0ff !important;
+   
+}
+.pop-up-x .title {
+    color: #fffac7 !important; 
 }
 
 #center {
@@ -290,10 +363,10 @@ body{
 .animate {
     place-items: center;
     background:
-    linear-gradient(to bottom right,#fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #f0ef8a 25.23%,#ffd1ec 34.56%, #FDE0F1 40.76%, #8af0dc 50%) bottom right,
-    linear-gradient(to bottom left, #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #f0ef8a 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #8af0dc 50%) bottom left,
-    linear-gradient(to top left,    #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #f0ef8a 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #8af0dc 50%) top left,
-    linear-gradient(to top right,   #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #f0ef8a 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #8af0dc  50%) top right;
+    linear-gradient(to bottom right,#fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #fcfbbf 25.23%,#ffd1ec 34.56%, #FDE0F1 40.76%, #8af0dc 50%) bottom right,
+    linear-gradient(to bottom left, #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #fcfbbf 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #8af0dc 50%) bottom left,
+    linear-gradient(to top left,    #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #fcfbbf 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #8af0dc 50%) top left,
+    linear-gradient(to top right,   #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #fcfbbf 25.23%, #ffd1ec 34.56%, #FDE0F1 40.76%, #8af0dc  50%) top right;
    background-size:50% 50%;
  border-radius: 20px;
    background-repeat:no-repeat;
@@ -535,7 +608,7 @@ box-shadow: 2px 2px 0px 0px #fcb1ea25;
 
     align-self: end;
     margin-bottom: 120px;
-    border-color: #E5F8FE;
+    border-color: #e5f8fe00;
 }
 
 .pop-up-v {
@@ -544,7 +617,7 @@ box-shadow: 2px 2px 0px 0px #fcb1ea25;
     align-self: start;
     margin-top: 120px;
     visibility: hidden;
-    border-color: #FEFDE5;
+    border-color: #fefde500;
 }
 
 
@@ -555,7 +628,7 @@ box-shadow: 2px 2px 0px 0px #fcb1ea25;
     align-self: start;
     margin-top: 200px;
     visibility: hidden;
-    border-color: #FCF0F6;
+    border-color: #fcf0f600;
 }
 
 .pop-up-h .content {
