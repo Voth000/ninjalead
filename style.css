@@ -273,7 +273,7 @@ body{
 }
 
 #center {
-    background-color: #7ae2ff;
+    background-color: #7ae2ff00;
     display: grid;
     grid-column: span 2;
     min-height: 100%;
