@@ -21,7 +21,7 @@
         overflow-x: none !important;
         overflow-y: scroll !important;
         position: unset !important;
-        height: 100vh !important;
+        height: calc(100% - 60px) !important;
         margin-top: 0px !important;
         margin-bottom: 0px !important;
         width: 100% !important;
