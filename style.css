@@ -17,11 +17,14 @@
         box-sizing: unset !important;
     }
 
-    body {
-        overflow-x: none !important;
+    html {
         overflow-y: scroll !important;
+    }
+
+    body {
+
         position: unset !important;
-        height: calc(100% - 60px) !important;
+        height: calc(100vh -80px);
         margin-top: 0px !important;
         margin-bottom: 0px !important;
         width: 100% !important;
@@ -316,6 +319,18 @@
     font-size: 20px !important;
     max-width: 90%;
     line-height: 22px !important;
+}
+
+.animate {
+    
+   background-size:50% 50%;
+ border-radius: 20px;
+   background-repeat:no-repeat;
+   height: 100vh !important;
+   max-height: 100vh !important;
+   width: 100%;
+    max-width: 100%;
+    filter: blur(30px);
 }
 
 }
