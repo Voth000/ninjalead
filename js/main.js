@@ -183,7 +183,7 @@ TweenLite.to(".loader", 1, {
 });
 
 gsap.to(".pre-loader", 2, {
-  top: "-100%",
+  top: "-115vh",
   ease: "power4.inOut",
   delay: 3,
 });
