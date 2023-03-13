@@ -13,6 +13,18 @@
 
 @media (max-width: 900px) {
 
+    #mb{
+        display: block !important;
+    }
+
+    #notmb {
+        display: none;
+    }
+     
+    .txt{
+        font-size: 18px !important;
+    }
+
     * {
         box-sizing: unset !important;
     }
@@ -383,18 +395,19 @@ body{
 .animate {
     place-items: center;
     background:
-    linear-gradient(to bottom right,#fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #f7f4c0 25.23%,#faf0f6 34.56%, #FDE0F1 40.76%, #bafdf0 50%) bottom right,
-    linear-gradient(to bottom left, #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #f7f4c0 25.23%, #faf0f6 34.56%, #FDE0F1 40.76%, #bafdf0 50%) bottom left,
-    linear-gradient(to top left,    #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #f7f4c0 25.23%, #faf0f6 34.56%, #FDE0F1 40.76%, #bafdf0 50%) top left,
-    linear-gradient(to top right,   #fcb1ea60 0%,  #B4F9DC 7.41%, #FDF8E8 13.72%, #f7f4c0 25.23%, #faf0f6 34.56%, #FDE0F1 40.76%, #bafdf0  50%) top right;
+    linear-gradient(to bottom right,#fcb1ea60 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%,#FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec 50%) bottom right,
+    linear-gradient(to bottom left, #fcb1ea60 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%, #FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec 50%) bottom left,
+    linear-gradient(to top left,    #fcb1ea60 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%, #FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec 50%) top left,
+    linear-gradient(to top right,   #fcb1ea60 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%, #FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec  50%) top right;
    background-size:50% 50%;
- border-radius: 20px;
+
    background-repeat:no-repeat;
    height: 100%;
    max-height: 100%;
    width: 100%;
     max-width: 100%;
-    filter: blur(30px);}
+    filter: blur(0px);
+}
 
 
 
@@ -513,7 +526,7 @@ text-decoration: none;
 }
 
 #logoimg {
-    filter: saturate(3) contrast(1.1);
+    filter: drop-shadow(2px 2px 2px #fff3d185) saturate(4) contrast(1.1);
 }
 
 #nn:hover { 
@@ -715,7 +728,7 @@ width: 100%;
 }
 
 .image-button {
-    filter: opacity(1)  contrast(1) saturate(120%) ;
+    filter: opacity(1)  contrast(1.1) saturate(130%) ;
     transition:all 0.4s; 
     position: absolute;
     display: flex;
@@ -746,8 +759,8 @@ width: 100%;
     z-index: -2;
 }
 
-#case {
-    filter: opacity(0.7) drop-shadow(2px 2px 4px rgba(245, 249, 132, 0.483)) brightness(1.1) saturate(1.4);
+#casel {
+    filter: opacity(0.8) drop-shadow(2px 2px 4px rgba(245, 249, 132, 0.483)) brightness(1.1) saturate(1.4);
     position: absolute;
     display: flex;
     justify-content: center;
@@ -756,10 +769,25 @@ width: 100%;
     height: 140%;
     width: 124%;
     min-width: 100%;
-  
     flex-direction: row;
     z-index: -2;
 }
+
+#caser {
+    filter: opacity(0.8) drop-shadow(2px 2px 4px rgba(245, 249, 132, 0.483)) brightness(1.1) saturate(1.4);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 140%;
+    width: 124%;
+    min-width: 100%;
+    flex-direction: row;
+    z-index: -2;
+}
+
+
 
 .vang, .hong, .xanh {
     transform: scale(0.8);
@@ -856,3 +884,51 @@ width: 100%;
 .mobilepage {
     display: none;
 }
+
+.pre-loader {
+    filter: drop-shadow(4px 4px 8px rgba(250, 131, 216, 0.317)) brightness(1.5) saturate(1.4);
+    border-radius: 0px 0px 20px 20px;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(79, 189, 158);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #B4F9DC;
+}
+
+.cont {
+    padding: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.txt {
+    color: rgb(225, 98, 239);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.loader {
+    border-radius: 20px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 5px;
+    height: 12px;
+    background: rgb(182, 166, 66);
+}
+
+#mb{
+    display: none;
+}
+
