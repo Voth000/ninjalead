@@ -265,7 +265,7 @@
 }
 
 .pop-up-v {
-    background-color: #fffac7 !important;
+    background-color: rgb(255 254 230 / 63%) !important;
    
 }
 .pop-up-v .content {
@@ -276,39 +276,46 @@
     color: #03e756 !important; 
 }
 .pop-up-v .mobilepage {
-    background-color: #fb81e4;
-    color: #b0f9c0;
+    filter: drop-shadow(2px 2px 2px #efb9ff);
+    box-shadow: 2px 2px 0px 0px #fbffbe45;
+    background-color: rgb(255 199 245 / 26%);
+    color: rgb(3 231 86);
 }
 
 .pop-up-h .mobilepage {
-    background-color: #94ffbb;
-    color: #ef7cbf;
+    filter: drop-shadow(2px 2px 2px #a4fffa99);
+        box-shadow: 2px 2px 0px 0px #a4fffa99;
+        background-color: rgb(255 254 219);
+        color: rgb(0 227 254);
 }
+
 .pop-up-h {
-    background-color: #cef4ff !important;
+    background-color: rgb(247 247 183 / 27%) !important;
    
 }
 .pop-up-h .content {
-    color: #03e756 !important;
+    color: rgb(241 211 0) !important;
    
 }
 .pop-up-h .title {
-    color: #fb81e4 !important; 
+    color: rgb(33 232 255) !important; 
 }
 
 .pop-up-x .mobilepage {
-    background-color: #28d0ff;
-    color: #fffac7;
+    filter: drop-shadow(2px 2px 2px #ff92ec47);
+    box-shadow: 2px 2px 0px 0px #fffeff47;
+    background-color: rgb(215 250 255);
+    color: rgb(253 157 255);
 }
 .pop-up-x {
-    background-color: #ffd1ec !important;
+    background-color: rgb(255 243 250 / 71%) !important;
 }
 .pop-up-x .content {
     color: #28d0ff !important;
    
 }
 .pop-up-x .title {
-    color: #fffac7 !important; 
+    color:rgb(251 148 232) !important; 
 }
 
 #center {
@@ -501,8 +508,12 @@ text-decoration: none;
 }
 
 #logoimg:hover {
-    background-color: #ffacde;
+    background-color: #fffccb;
     border-radius: 12px;
+}
+
+#logoimg {
+    filter: saturate(3) contrast(1.1);
 }
 
 #nn:hover { 
@@ -719,6 +730,7 @@ width: 100%;
 
 
 #paral {
+    animation: popScale 2s ease-in-out infinite;
     filter:  brightness(1.1) opacity(0.8) contrast(0.9) saturate(102%) hue-rotate(10deg);
     position: absolute;
     display: flex;
@@ -752,13 +764,28 @@ width: 100%;
 .vang, .hong, .xanh {
     transform: scale(0.8);
     /* Set up a transition for all property changes that takes place over 1 second */
-    transition:all 0.4s; 
-    
+    transition: transform 0.1s; 
+   
+   
     /* Set the size of the div, otherwise it will collapse because there's no content
        in its foreground */
     width:160px;
     height:160px;
 }
+
+
+@keyframes popScale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.04);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 
 
@@ -787,8 +814,9 @@ width: 100%;
 
 .hong.normal, .hong { 
     background: url("./image/p\ _hover.png");
-  
+   
     /* Make the image fit into the element */
+    animation-delay: 1s ;
     background-size:contain;
     background-repeat:no-repeat;
   }
@@ -809,6 +837,7 @@ width: 100%;
     background: url("./image/g\ _\ hover.png");
   
     /* Make the image fit into the element */
+    animation-delay: 1s ;
     background-size:contain;
     background-repeat:no-repeat;
   }
