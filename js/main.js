@@ -170,12 +170,6 @@ gsap.from(".txt", 0.8, {
   delay: 0,
 });
 
-gsap.from(".vaimg", 0.8, {
-  y: 40,
-  opacity: 1,
-  ease: "power2.inOut",
-  delay: 0,
-});
 
 TweenLite.to(".loader", 1, {
   width: "40vw",
