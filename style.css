@@ -277,7 +277,7 @@
 }
 
 .pop-up-v {
-    background-color: rgb(255 254 230 / 63%) !important;
+    background-color: rgb(255 251 165) !important;
    
 }
 .pop-up-v .content {
@@ -302,7 +302,7 @@
 }
 
 .pop-up-h {
-    background-color: rgb(247 247 183 / 27%) !important;
+    background-color: rgb(207 255 211 / 91%) !important;
    
 }
 .pop-up-h .content {
@@ -320,7 +320,7 @@
     color: rgb(253 157 255);
 }
 .pop-up-x {
-    background-color: rgb(255 243 250 / 71%) !important;
+    background-color: rgb(255 243 250) !important;
 }
 .pop-up-x .content {
     color: #28d0ff !important;
@@ -620,6 +620,7 @@ max-width:100%;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+   
 }
 
 
@@ -629,13 +630,14 @@ max-width:100%;
 background-color: #fcf9ff;
 border-radius: 60px;
 height: auto;
-box-shadow: 2px 2px 0px 0px #fcb1ea25;
+
 
 }
 
 #vangpop, #hongpop, #xanhpop {
     transition: visibility 0.1s linear,opacity 0.5s ease-in-out;
     transition-delay: 0s;
+    box-shadow: 2px 2px 8px 0px  #73fcda3c;
 }
 
 .pop-up-x {
