@@ -235,3 +235,4 @@ gsap.from("#xanhpop", {
 
 
 
+/// <script src="index.js" type="module"></script>///
