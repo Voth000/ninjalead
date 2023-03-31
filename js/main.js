@@ -1,3 +1,82 @@
+//// disable hover for touch screen////
+
+gsap.from(".txt", 0.8, {
+  y: 40,
+  opacity: 0,
+  ease: "power2.inOut",
+  delay: 0,
+});
+
+
+TweenLite.to(".loader", 1, {
+  width: "40vw",
+  delay: 2,
+});
+
+gsap.to(".pre-loader", 2, {
+  top: "-115vh",
+  ease: "power4.inOut",
+  delay: 3,
+});
+
+gsap.from("#caser", {
+  opacity: 0, 
+  x: 100, 
+  duration: 1,
+  delay: 4,
+});
+
+gsap.from("#casel", {
+  opacity: 0, 
+  y: 100, 
+  duration: 1,
+  delay: 3.6,
+});
+
+gsap.from(".footer", {
+  opacity: 0, 
+  y: 150, 
+  duration: 1,
+  delay: 4.2,
+});
+
+gsap.from("#paral", {
+  opacity: 0, 
+  x: 100, 
+  duration: 2,
+  delay: 4.3,
+});
+
+gsap.from("#vangpop", {
+  opacity: 1, 
+  y: 450, 
+  duration: 1,
+  delay: 3.4,
+});
+
+gsap.from("#hongpop", {
+  opacity: 1, 
+  y: 550, 
+  duration: 1,
+  delay: 3.6,
+});
+
+gsap.from("#xanhpop", {
+  opacity: 1, 
+  y: 650, 
+  duration: 1,
+  delay: 3.8,
+});
+
+
+
+
+
+/// <script src="index.js" type="module"></script>///
+
+
+
+
 var poem = [
   "View as computers to interact with the bike",
   "Mobile Devices is not fully supported",
@@ -161,78 +240,3 @@ function parallax(e){
     })
 }
 
-//// disable hover for touch screen////
-
-gsap.from(".txt", 0.8, {
-  y: 40,
-  opacity: 0,
-  ease: "power2.inOut",
-  delay: 0,
-});
-
-
-TweenLite.to(".loader", 1, {
-  width: "40vw",
-  delay: 2,
-});
-
-gsap.to(".pre-loader", 2, {
-  top: "-115vh",
-  ease: "power4.inOut",
-  delay: 3,
-});
-
-gsap.from("#caser", {
-  opacity: 0, 
-  x: 100, 
-  duration: 1,
-  delay: 4,
-});
-
-gsap.from("#casel", {
-  opacity: 0, 
-  y: 100, 
-  duration: 1,
-  delay: 3.6,
-});
-
-gsap.from(".footer", {
-  opacity: 0, 
-  y: 150, 
-  duration: 1,
-  delay: 4.2,
-});
-
-gsap.from("#paral", {
-  opacity: 0, 
-  x: 100, 
-  duration: 2,
-  delay: 4.3,
-});
-
-gsap.from("#vangpop", {
-  opacity: 1, 
-  y: 450, 
-  duration: 1,
-  delay: 3.4,
-});
-
-gsap.from("#hongpop", {
-  opacity: 1, 
-  y: 550, 
-  duration: 1,
-  delay: 3.6,
-});
-
-gsap.from("#xanhpop", {
-  opacity: 1, 
-  y: 650, 
-  duration: 1,
-  delay: 3.8,
-});
-
-
-
-
-
-/// <script src="index.js" type="module"></script>///
