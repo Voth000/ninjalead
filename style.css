@@ -395,19 +395,34 @@ body{
 .animate {
     place-items: center;
     background:
-    linear-gradient(to bottom right,#fcb1ea60 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%,#FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec 50%) bottom right,
-    linear-gradient(to bottom left, #fcb1ea60 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%, #FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec 50%) bottom left,
-    linear-gradient(to top left,    #fcb1ea60 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%, #FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec 50%) top left,
-    linear-gradient(to top right,   #fcb1ea60 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%, #FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec  50%) top right;
+    linear-gradient(to bottom right,#FCB1EA 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%,#FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec 50%) bottom right,
+    linear-gradient(to bottom left, #FCB1EA 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%, #FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec 50%) bottom left,
+    linear-gradient(to top left,    #FCB1EA 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%, #FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec 50%) top left,
+    linear-gradient(to top right,   #FCB1EA 0%,  #B4F9DC 7.41%, #f7f4c0 13.72%, #f7f4c0 25.23%, #FDE0F1 34.56%, #FDE0F1 40.76%, #a1ffec  50%) top right;
    background-size:50% 50%;
-
    background-repeat:no-repeat;
    height: 100%;
-   max-height: 100%;
+  
    width: 100%;
-    max-width: 100%;
+
     filter: blur(0px);
+    animation: bg 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
+
+@keyframes bg {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 1000%;
+    height: 1000%;
+  }
+}
+
 
 
 
