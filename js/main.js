@@ -356,6 +356,7 @@ function thing(argument) {
 thing("Yo.");
 
 */
+
 (function(w) {
 
   var canvas, ctx;
@@ -397,6 +398,8 @@ thing("Yo.");
   the grid and creating the particles, attaching event handlers, and starting the
   animation loop.
   */
+  const mq = window.innerWidth;
+  if (mq > 900) {
   function init() {
       
       //These lines get the canvas DOM element and canvas context, respectively.
@@ -542,7 +545,7 @@ thing("Yo.");
       //When the page is finished loading, run the draw() function.
       w.onload = draw;
 
-  }
+  }}
 
 
   /*
