@@ -105,7 +105,7 @@ gsap.from("#xanhpop", {
 ////
 
 var dia1 = [
-  " {Click + Move around}",
+  " {Hold click + Move around}",
 "?Hover over the jelly circle?",
  ];
    let displayIndex1 = 0;
